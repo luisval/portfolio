@@ -15,34 +15,23 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>Luis</title>
+    <title>Luis Valenzuela Cazares</title>
   </head>
   <body class="light" id="top">
     <header class="header center">
-
-
       <nav class="nav center">
         <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
+          <li class="nav__list-item"><a class="link link--nav" href="#projects">Projects</a></li>
+          <li class="nav__list-item"><a class="link link--nav" href="#skills">Skills</a></li>
+          <li class="nav__list-item"><a class="link link--nav" href="#publications">Publications</a></li>
+          <li class="nav__list-item"><a class="link link--nav" href="#contact">Contact</a></li>
         </ul>
 
         <button type="button" aria-label="toggle theme" class="btn btn--icon">
           <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
         </button>
 
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
+        <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
           <i aria-hidden="true" class="fas fa-bars"></i>
         </button>
       </nav>
@@ -51,281 +40,125 @@
     <main>
       <!-- About -->
       <div class="about center">
-        <h1> <span class="about__name">Luis Valenzuela Cazares.</span></h1>
-        <h2 class="about__role">Physicist</h2>
+        <h1><span class="about__name">Luis Valenzuela Cazares</span></h1>
+        <h2 class="about__role">Experimental Nuclear Physicist</h2>
         <p class="about__desc">
-        Throughout my career journey across diverse nuclear physics experiments and institutions, I have built
-        experimental data analysis, R&D, and simulation expertise. I have contributed to physics analyses and
-        code development that optimized large-scale collaborations, gaining a solid foundation in experimental 
-        techniques and teamwork. I look forward to expanding this expertise through a PhD in Experimental
-        Nuclear or High Energy Physics.
+          Throughout my career journey across diverse nuclear physics experiments and institutions, I have built expertise in 
+          <strong>data analysis, detector calibration, and simulation</strong>. My contributions include developing scientific codes 
+          and conducting physics analyses that optimized the performance of large-scale collaborations. These experiences gave me 
+          a solid foundation in experimental techniques, teamwork, and international research. 
         </p>
 
+        <ul>
+          <li>Experience in <strong>nuclear and high-energy physics experiments</strong> (sPHENIX, EIC, MPD-NICA).</li>
+          <li>Skilled in <strong>scientific computing, Monte Carlo methods, and machine learning</strong>.</li>
+          <li>Research findings contributed to <strong>collaboration papers, posters, and conference presentations</strong>.</li>
+        </ul>
+
+        <p>I am eager to expand this expertise through a <strong>PhD in Experimental Nuclear Physics</strong>, advancing experimental methods and contributing to new discoveries.</p>
+
         <div class="about__contact center">
-          <a href="">
-         <!-- Resume pending   <span class="btn btn--outline">Resume</span> --> 
-          </a>
-
-          <a
-          href="https://www.linkedin.com/in/luisvalenzuelacazares/"
-          aria-label="linkedin"
-          class="link link--icon"
-        >
-          <i aria-hidden="true" class="fab fa-linkedin"></i>
-        </a>
-
-          <a
-            href="https://github.com/luisval"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-
-          <a
-          href="https://gitlab.com/luisval"
-          aria-label="gitlab
-          class="link link--icon"
-        >
-          <i aria-hidden="true" class="fab fa-gitlab"></i>
-        </a>
-               
-        
+          <a href="resume.pdf" target="_blank" class="btn btn--outline">Download CV</a>
+          <a href="https://www.linkedin.com/in/luisvalenzuelacazares/" target="_blank" class="link link--icon"><i aria-hidden="true" class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/luisval" target="_blank" class="link link--icon"><i aria-hidden="true" class="fab fa-github"></i></a>
+          <a href="https://gitlab.com/luisval" target="_blank" class="link link--icon"><i aria-hidden="true" class="fab fa-gitlab"></i></a>
+          <a href="https://orcid.org/" target="_blank" class="link link--icon"><i aria-hidden="true" class="fab fa-orcid"></i></a>
         </div>
       </div>
 
       <!-- Projects -->
       <section id="projects" class="section projects">
         <h2 class="section__title">Projects</h2>
-
         <div class="projects__grid">
+
           <div class="project">
             <h3>TPC Calibration System for sPHENIX</h3>
             <p class="project__description">
-              This project is dedicated to analyzing and developing the TPC calibration lasers at the sPHENIX experiment.              
+              Analysis and development of the TPC calibration laser system at the sPHENIX experiment, focusing on detector calibration and performance.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">Scientific Coding</li>
-              <li class="project__stack-item">Optimization</li>
-              <li class="project__stack-item">Statistical Analysis</li>
+              <li>Scientific Coding</li><li>Detector Optimization</li><li>Statistical Analysis</li>
             </ul>
-
-            <a
-              href="https://github.com/luisval/tpc/"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href=""
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
+            <a href="https://github.com/luisval/tpc/" target="_blank" class="link link--icon"><i class="fab fa-github"></i></a>
           </div>
 
           <div class="project">
             <h3>Data Cleaning for the Electron-Ion Collider</h3>
             <p class="project__description">
-              A project dedicated to the pion background elimination in the Electron-Ion Collider
-               Experiment at Brookhaven National Laboratory.   
-             </p>
+              Pion background elimination in the EIC experiment at BNL using advanced data cleaning and visualization techniques.
+            </p>
             <ul class="project__stack">
-              <li class="project__stack-item">Data Cleaning</li>
-              <li class="project__stack-item">Visualization Methods</li>
-              <li class="project__stack-item">Optimization</li>
+              <li>Data Cleaning</li><li>ROOT/Visualization</li><li>Optimization</li>
             </ul>
-
-            <a
-              href="https://github.com/luisval/EIC-TwinPeaksPie/"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href=""
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
+            <a href="https://github.com/luisval/EIC-TwinPeaksPie/" target="_blank" class="link link--icon"><i class="fab fa-github"></i></a>
           </div>
 
           <div class="project">
-            <h3> Centrality determination for the MPD-NICA experiment </h3>
+            <h3>Centrality Determination for MPD-NICA</h3>
             <p class="project__description">
-              This project is dedicated to the main analysis of my master thesis at the Universidad de Sonora. These macros are focused on 
-              centrality studies performed by numerical methods and simulations.
+              Master’s thesis project: centrality studies using numerical and Monte Carlo methods for the MPD experiment at JINR.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">Numerical methods</li>
-              <li class="project__stack-item">Monte Carlo Method</li>
-              <li class="project__stack-item">Nuclear Physics</li>
+              <li>Numerical Methods</li><li>Monte Carlo</li><li>Nuclear Physics</li>
             </ul>
-
-            <a
-              href="https://gitlab.com/luisval/masterthesis"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-gitlab"></i>
-            </a>
-            <a
-              href=""
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
+            <a href="https://gitlab.com/luisval/masterthesis" target="_blank" class="link link--icon"><i class="fab fa-gitlab"></i></a>
           </div>
+
+          <div class="project">
+            <h3>Optimization of MPD Experiment</h3>
+            <p class="project__description">
+              Analysis and software development for detector systems in the MPD experiment at JINR.
+            </p>
+            <ul class="project__stack">
+              <li>Simulated Data</li><li>Data Analysis</li><li>Monte Carlo Methods</li>
+            </ul>
+            <a href="https://gitlab.com/mexnica-physics-analysis-and-offline-group" target="_blank" class="link link--icon"><i class="fab fa-gitlab"></i></a>
+          </div>
+
         </div>
       </section>
 
-
-
-      <!-- Projects -->
-    <!--  <section id="projects" class="section projects"> -->
-    <!--    <h2 class="section__title">Projects</h2> -->
-
-        <div class="projects__grid">
-          <div class="project">
-            <h3>Optimization of MPD experiment</h3>
-            <p class="project__description">
-              A project dedicated to the analysis and software development of detector systems for the
-               Multi-Purpose Detector (MPD) experiment at the Joint Institute for Nuclear Research.       
-            </p>
-              <ul class="project__stack">
-              <li class="project__stack-item">Data Analysis</li>
-              <li class="project__stack-item">Simulated data</li>
-              <li class="project__stack-item">Monte Carlo Methods</li>
-            </ul>
-
-            <a
-              href="https://gitlab.com/mexnica-physics-analysis-and-offline-group"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-gitlab"></i>
-            </a>
-            <a
-              href=""
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Machine Learning</h3>
-            <p class="project__description">
-            Project under development.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Data Analysis</li>
-              <li class="project__stack-item">Data Cleaning</li>
-              <li class="project__stack-item"></li>
-            </ul>
-
-            <a
-              href=""
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href=""
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Data Cleaning</h3>
-            <p class="project__description">          
-
-            Project under development.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Data Cleaning</li>
-              <li class="project__stack-item">Data Analysis</li>
-              <li class="project__stack-item"></li>
-            </ul>
-
-            <a
-              href=""
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-gitlab"></i>
-            </a>
-            <a
-              href=""
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-        </div>
+      <!-- Publications -->
+      <section id="publications" class="section publications">
+        <h2 class="section__title">Publications & Presentations</h2>
+        <ul>
+          <li>Co-author in <em>Scientific Reports</em> and <em>Nuclear Instruments and Methods</em> (collaboration papers, links available upon request).</li>
+          <li>Conference talks and posters at international workshops on nuclear and high-energy physics.</li>
+        </ul>
       </section>
-
-
 
       <!-- Skills -->
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
+        <h3>Programming & Tools</h3>
         <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">SQL</li>
-          <li class="skills__list-item btn btn--plain">Fortran</li>
-          <li class="skills__list-item btn btn--plain">C++</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">High-Performance Computing</li>
-          <li class="skills__list-item btn btn--plain">Machine Learning Algorithms</li>
-          <li class="skills__list-item btn btn--plain">Statistical Analysis</li>
-          <li class="skills__list-item btn btn--plain">Shell Scripting</li>
-          <li class="skills__list-item btn btn--plain">Linux</li>
-          <li class="skills__list-item btn btn--plain">Microsoft Office Suite</li>
-          <li class="skills__list-item btn btn--plain">Monte Carlo Simulation</li>
+          <li>Python</li><li>C++</li><li>Fortran</li><li>SQL</li><li>Git</li><li>Linux / Shell Scripting</li>
+        </ul>
+        <h3>Data & Analysis</h3>
+        <ul class="skills__list">
+          <li>Monte Carlo Simulation</li><li>ROOT</li><li>GEANT4</li><li>High-Performance Computing</li><li>Machine Learning</li><li>Statistical Analysis</li>
+        </ul>
+        <h3>Professional</h3>
+        <ul class="skills__list">
+          <li>Team Collaboration</li><li>Teaching & Mentoring</li><li>Microsoft Office Suite</li>
         </ul>
       </section>
 
       <!-- Contact -->
       <section class="section contact center" id="contact">
         <h2 class="section__title">Contact</h2>
-        <a href="mailto:luisval.c@outlook.com">
-          <span class="btn btn--outline">Email me</span>
-        </a>
+        <a href="mailto:luisval.c@outlook.com" class="btn btn--outline">Email Me</a>
       </section>
     </main>
 
     <footer class="footer">
-      <a
-        href="https://github.com/rajshekhar26/cleanfolio-minimal"
-        class="link footer__link"
-      >
-      </a>
+      <p class="footer__text">© 2025 Luis Valenzuela Cazares | Built with Cleanfolio</p>
     </footer>
 
-    <h3>
-      <a href="https://rajshekhar26.github.io/cleanfolio-minimal" class="link"
-        >RS.</a
-      >
-    </h3>
-
     <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top"><i class="fas fa-arrow-up"></i></a>
+      </div>
     </div>
 
     <script src="./script.js"></script>
