@@ -410,4 +410,9 @@ main {
   .scroll-container {
     display: none;
   }
+
+  .link::before {
+    pointer-events: none;
+  }
+
 }
