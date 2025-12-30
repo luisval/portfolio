@@ -8,8 +8,8 @@ const addThemeClass = (bodyClass, btnClass) => {
   btnTheme.classList.add(btnClass)
 }
 
-const getBodyTheme = localStorage.getItem('portfolio-theme')
-const getBtnTheme = localStorage.getItem('portfolio-btn-theme')
+const getBodyTheme = localStorage.getItem('portfolio-theme') || 'light'
+const getBtnTheme = localStorage.getItem('portfolio-btn-theme') || 'fa-moon'
 
 addThemeClass(getBodyTheme, getBtnTheme)
 
@@ -61,3 +61,13 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+document.querySelectorAll('.nav__list a').forEach((link) => {
+  link.addEventListener('click', () => {
+    const navUl = document.querySelector('.nav__list')
+    if (navUl.classList.contains('display-nav-list')) {
+      btnHamburger.classList.remove('fa-times')
+      btnHamburger.classList.add('fa-bars')
+      navUl.classList.remove('display-nav-list')
+    }
+  })
+})
